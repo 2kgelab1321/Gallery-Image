@@ -1,23 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body{
-    background: url('../Images/cool.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
 .barre{
-    width: 80% auto;
+    position: fixed;
+    top: 0;
+    z-index: 8;
+    width: 100%;
     height: 150px;
-    background:transparent;
+    background:rgb(65, 63, 63);
     backdrop-filter: blur(30px);
     font-family:'Poppins', sans-serif;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-start-start-radius: 20px;
-    border-start-end-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     box-shadow: 0px 6px 0px rgba(0,0,0,0.2);
 }
 .barre .image{
@@ -83,3 +84,71 @@ li a{
         padding-bottom: 10px;
     }
 }
+.section-main{
+    margin-top:150px;;
+    width: 80% auto;
+    height: 800px;
+}
+.section-main .section1{
+    width: 100%;
+    height: 30px;
+    background:black;
+}
+.section1 p{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #fff;
+    font-family:'Poppins',sans-serif;
+}
+.section2{
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    width: 100%;
+    height:170px auto;
+    background:rgba(255, 255, 255, 0.774);
+}
+.section2 #layer1{
+    width:170px;
+    height:170px;
+    background:black;
+}
+.section2 #layer2{
+    width:170px;
+    height:170px;
+    background:red;
+}
+.section2 #layer3{
+    width:170px;
+    height:170px;
+    background:red;
+}
+.section2 #layer4{
+    width:170px;
+    height:170px;
+    background:red;
+}
+.l1{
+    display: grid;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80%;
+
+}
+.text{
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:20%;
+    font-size: 1.2rem;
+    color: #000;
+    border-radius: 20px 0px 0px 0px;
+}
+
