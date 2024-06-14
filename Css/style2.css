@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background: url('../Images/cool.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.barre{
+    width: 80% auto;
+    height: 150px;
+    background:transparent;
+    backdrop-filter: blur(30px);
+    font-family:'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-start-start-radius: 20px;
+    border-start-end-radius: 20px;
+    box-shadow: 0px 6px 0px rgba(0,0,0,0.2);
+}
+.barre .image{
+    width: 140px;
+    height: 140px;
+    margin-left: 10px;
+}
+.image img{
+    width: 100%;
+    height:100%;
+    border-radius:50%;
+}
+.barre .element-list{
+    width: 70%;
+    height: 60px;
+    margin-right: 10px;
+}
+.element-list .list{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; 
+}
+.list li{
+    list-style: none;
+}
+li a{
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+@media(max-width:670px) {
+    .element-list .list{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly; 
+    }
+    li a{
+        font-size: 0.999rem;
+        text-decoration: none;
+        color: #fff;
+        font-weight: 600;
+    }
+}
+@media(max-width:603px){
+    .barre .element-list{
+        width: 50%;
+        height: 100%;
+        margin-right: 10px;
+        padding-bottom: 50px;
+    }
+    .element-list .list{
+        display:block;
+        align-items: center;
+        justify-content: space-evenly; 
+    }
+    .element-list li a{
+        font-size: 1.3rem;
+        text-decoration: none;
+        color: #fff;
+        font-weight: 600;
+        padding-bottom: 10px;
+    }
+}
